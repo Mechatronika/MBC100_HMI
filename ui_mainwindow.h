@@ -1502,7 +1502,7 @@ public:
         lblEncoderDiameter->setFont(font4);
         lcdEncoderDiameter = new QLCDNumber(groupSetupAxes);
         lcdEncoderDiameter->setObjectName(QStringLiteral("lcdEncoderDiameter"));
-        lcdEncoderDiameter->setGeometry(QRect(58, 57, 55, 50));
+        lcdEncoderDiameter->setGeometry(QRect(58, 57, 216, 91));
         lcdEncoderDiameter->setMinimumSize(QSize(0, 50));
         lcdEncoderDiameter->setStyleSheet(QLatin1String("color: black;\n"
 "background-color: white;"));
@@ -1922,7 +1922,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
         stackedWidget_1->setCurrentIndex(1);
         stackedWidget_2->setCurrentIndex(1);
 
