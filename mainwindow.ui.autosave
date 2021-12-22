@@ -1,0 +1,3268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1048</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.267, x2:1, y2:0.926, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(141, 141, 141, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>1</number>
+    </property>
+    <property name="topMargin">
+     <number>1</number>
+    </property>
+    <property name="rightMargin">
+     <number>1</number>
+    </property>
+    <property name="bottomMargin">
+     <number>1</number>
+    </property>
+    <property name="spacing">
+     <number>1</number>
+    </property>
+    <item row="2" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0, 0, 0, 0%);
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="mainPage">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="leftMargin">
+         <number>3</number>
+        </property>
+        <property name="topMargin">
+         <number>3</number>
+        </property>
+        <property name="rightMargin">
+         <number>3</number>
+        </property>
+        <property name="bottomMargin">
+         <number>3</number>
+        </property>
+        <item row="0" column="0" colspan="2">
+         <widget class="QStackedWidget" name="stackedWidget_1">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="pageMain_Gen1">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 0%);</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="spacing">
+             <number>1</number>
+            </property>
+            <property name="leftMargin">
+             <number>1</number>
+            </property>
+            <property name="topMargin">
+             <number>1</number>
+            </property>
+            <property name="rightMargin">
+             <number>1</number>
+            </property>
+            <property name="bottomMargin">
+             <number>1</number>
+            </property>
+            <item>
+             <widget class="QGroupBox" name="groupBox_Chart1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>300</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0%);</string>
+              </property>
+              <property name="title">
+               <string>External Generator - Power Graph</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupGen1">
+              <property name="maximumSize">
+               <size>
+                <width>256</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-color: #FF17365D;
+    margin-top: 27px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 5px 30px;
+    background-color: #FF17365D;
+    color: rgb(255, 255, 255);
+}</string>
+              </property>
+              <property name="title">
+               <string>External Generator</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>50</weight>
+                   <italic>true</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(170, 255, 127);
+color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Actual Power [%]:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLCDNumber" name="lcdPower1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>64</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(170, 85, 255);
+border: 2px solid  rgb(255, 255, 255);
+border-radius: 10px;
+padding: 0 8px;
+
+
+</string>
+                 </property>
+                 <property name="smallDecimalPoint">
+                  <bool>true</bool>
+                 </property>
+                 <property name="digitCount">
+                  <number>3</number>
+                 </property>
+                 <property name="intValue" stdset="0">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="ledGen1_Ready">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton {
+    background-color:       gray;
+    color:                  		white;
+}
+
+QRadioButton::indicator {
+    width:                  32px;
+    height:                 32px;
+    border-radius:          10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       green;
+    border:                 2px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       black;
+    border:                 2px solid white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string> READY</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="ledGen1_Automatic">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton {
+    background-color:       gray;
+    color:                  		white;
+}
+
+QRadioButton::indicator {
+    width:                  32px;
+    height:                 32px;
+    border-radius:          10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       green;
+    border:                 2px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       black;
+    border:                 2px solid white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>AUTO POWER</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="ledGen1_Alarm">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton {
+    background-color:       gray;
+    color:                  		white;
+}
+
+QRadioButton::indicator {
+    width:                  32px;
+    height:                 32px;
+    border-radius:          10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       red;
+    border:                 2px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       black;
+    border:                 2px solid white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>ALARM</string>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupStrip1">
+              <property name="maximumSize">
+               <size>
+                <width>256</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-color: #FF17365D;
+    margin-top: 27px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 5px 50px;
+    background-color: #FF17365D;
+    color: rgb(255, 255, 255);
+}</string>
+              </property>
+              <property name="title">
+               <string>External Belt</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0" colspan="2">
+                <widget class="QLabel" name="label_6">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>50</weight>
+                   <italic>true</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(170, 255, 127);
+color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Actual Torque [%]:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="QLCDNumber" name="lcdTorque1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>64</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(170, 255, 127);
+border: 2px solid rgb(170, 255, 127);
+border-radius: 10px;
+padding: 0 8px;
+
+
+</string>
+                 </property>
+                 <property name="smallDecimalPoint">
+                  <bool>true</bool>
+                 </property>
+                 <property name="digitCount">
+                  <number>3</number>
+                 </property>
+                 <property name="intValue" stdset="0">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="2">
+                <widget class="QRadioButton" name="ledStrip1_Ready">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton {
+    background-color:       gray;
+    color:                  		white;
+}
+
+QRadioButton::indicator {
+    width:                  32px;
+    height:                 32px;
+    border-radius:          10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       green;
+    border:                 2px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       black;
+    border:                 2px solid white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string> READY</string>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0" colspan="2">
+                <widget class="QRadioButton" name="ledStrip1_Alarm">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton {
+    background-color:       gray;
+    color:                  		white;
+}
+
+QRadioButton::indicator {
+    width:                  32px;
+    height:                 32px;
+    border-radius:          10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       red;
+    border:                 2px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       black;
+    border:                 2px solid white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>ALARM</string>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="label_19">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgba(255, 255, 255, 0%);
+color: white;</string>
+                 </property>
+                 <property name="text">
+                  <string>Error N:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLabel" name="lblError_ExtRoll">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgba(255, 255, 255, 0%);
+color: white;</string>
+                 </property>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="pageSet_Gen2">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 0%);</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QGroupBox" name="groupSetupGen2_2">
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <italic>true</italic>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0%);</string>
+              </property>
+              <property name="title">
+               <string>Internall Welding G2:</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <widget class="QToolButton" name="tbtEnableGen2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>190</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>190</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:white;
+background-color: rgba(184, 184, 184, 0%);</string>
+                   </property>
+                   <property name="text">
+                    <string>ENABLE</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="icones.qrc">
+                     <normaloff>:/new/prefix1/Icones/switchOFF_Trans.png</normaloff>
+                     <normalon>:/new/prefix1/Icones/switchON_Trans.png</normalon>:/new/prefix1/Icones/switchOFF_Trans.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>80</width>
+                     <height>36</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextBesideIcon</enum>
+                   </property>
+                   <property name="autoRaise">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="tbtEnablePower2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>190</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>190</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: white;
+background-color: rgba(184, 184, 184, 0%);</string>
+                   </property>
+                   <property name="text">
+                    <string>AUTO Power</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="icones.qrc">
+                     <normaloff>:/new/prefix1/Icones/switchOFF_Trans.png</normaloff>
+                     <normalon>:/new/prefix1/Icones/switchON_Trans.png</normalon>:/new/prefix1/Icones/switchOFF_Trans.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>80</width>
+                     <height>36</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextBesideIcon</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="tbtEnableMotor2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>190</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>190</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: white;
+background-color: rgba(184, 184, 184, 0%);</string>
+                   </property>
+                   <property name="text">
+                    <string>ServoMotor</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="icones.qrc">
+                     <normaloff>:/new/prefix1/Icones/switchOFF_Trans.png</normaloff>
+                     <normalon>:/new/prefix1/Icones/switchON_Trans.png</normalon>:/new/prefix1/Icones/switchOFF_Trans.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>80</width>
+                     <height>36</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextBesideIcon</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_9">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>50</weight>
+                     <italic>true</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>INTERNAL STRIP SPEED 2 [%]: </string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_7">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_2">
+                     <item>
+                      <widget class="QFrame" name="frame_3">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 0);
+background-color: rgb(255, 255, 127);</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_15">
+                        <property name="topMargin">
+                         <number>3</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>3</number>
+                        </property>
+                        <item>
+                         <widget class="QLabel" name="label_12">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>Lenght: </string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLCDNumber" name="lcdLenghtCor2">
+                          <property name="styleSheet">
+                           <string notr="true">color: black;
+background-color: rgb(255, 255, 255);</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_23">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>[mm]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_10">
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>Power Correction:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLCDNumber" name="lcdPowerCor2">
+                          <property name="styleSheet">
+                           <string notr="true">color: black;
+background-color: white;</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_24">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>[%]</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QToolButton" name="nIS">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 170, 127);</string>
+                       </property>
+                       <property name="text">
+                        <string>...</string>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>32</width>
+                         <height>48</height>
+                        </size>
+                       </property>
+                       <property name="arrowType">
+                        <enum>Qt::LeftArrow</enum>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLCDNumber" name="lcdIntRollDiameter">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>256</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: black;
+background-color: white;</string>
+                       </property>
+                       <property name="smallDecimalPoint">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QToolButton" name="pIS">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(170, 255, 127);</string>
+                       </property>
+                       <property name="text">
+                        <string>...</string>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>32</width>
+                         <height>48</height>
+                        </size>
+                       </property>
+                       <property name="arrowType">
+                        <enum>Qt::RightArrow</enum>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <item>
+                  <widget class="QLCDNumber" name="lcdMaxGen2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: black;
+background-color: white;</string>
+                   </property>
+                   <property name="smallDecimalPoint">
+                    <bool>true</bool>
+                   </property>
+                   <property name="digitCount">
+                    <number>4</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_22">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>16</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>max</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="slideMaxGen2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QSlider{
+	min-height: 56px;
+	background-color:rgba(255,255,255,0%);
+
+}
+QSlider::groove:horizontal{
+	border: 2px solid blue;
+	height: 10px;
+	background: lightblue;
+	margin: 0 0px;
+}
+QSlider::handle:horizontal{
+	background: #22B14C;
+	border: 5px solid #B5E61D;
+	width: 32px;
+	margin: -32px -1px;
+	border-radius:10px;
+}</string>
+                   </property>
+                   <property name="minimum">
+                    <number>20</number>
+                   </property>
+                   <property name="maximum">
+                    <number>120</number>
+                   </property>
+                   <property name="value">
+                    <number>50</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_10">
+                 <item>
+                  <widget class="QLCDNumber" name="lcdMinGen2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: black;
+background-color: white;</string>
+                   </property>
+                   <property name="smallDecimalPoint">
+                    <bool>true</bool>
+                   </property>
+                   <property name="digitCount">
+                    <number>4</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_18">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>16</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>min</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="slideMinGen2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QSlider{
+	min-height: 56px;
+	background-color:rgba(255,255,255,0%);
+
+}
+QSlider::groove:horizontal{
+	border: 2px solid blue;
+	height: 10px;
+	background: lightblue;
+	margin: 0 0px;
+}
+QSlider::handle:horizontal{
+	background: #22B14C;
+	border: 5px solid #B5E61D;
+	width: 32px;
+	margin: -32px -1px;
+	border-radius:10px;
+}</string>
+                   </property>
+                   <property name="minimum">
+                    <number>20</number>
+                   </property>
+                   <property name="maximum">
+                    <number>120</number>
+                   </property>
+                   <property name="value">
+                    <number>30</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QStackedWidget" name="stackedWidget_2">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="pageMain_Gen2">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 0%);</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="spacing">
+             <number>1</number>
+            </property>
+            <property name="leftMargin">
+             <number>1</number>
+            </property>
+            <property name="topMargin">
+             <number>1</number>
+            </property>
+            <property name="rightMargin">
+             <number>1</number>
+            </property>
+            <property name="bottomMargin">
+             <number>1</number>
+            </property>
+            <item>
+             <widget class="QGroupBox" name="groupBox_Chart2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>300</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0%);</string>
+              </property>
+              <property name="title">
+               <string>Internal Generator - Power Graph</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupGen2">
+              <property name="maximumSize">
+               <size>
+                <width>256</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-color: #FF17365D;
+    margin-top: 27px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 5px 30px;
+    background-color: #FF17365D;
+    color: rgb(255, 255, 255);
+}</string>
+              </property>
+              <property name="title">
+               <string>Internal Generator</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>50</weight>
+                   <italic>true</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(170, 255, 127);
+color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Actual Power [%]:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLCDNumber" name="lcdPower2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>64</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(170, 85, 255);
+border: 2px solid  rgb(255, 255, 255);
+border-radius: 10px;
+padding: 0 8px;</string>
+                 </property>
+                 <property name="smallDecimalPoint">
+                  <bool>true</bool>
+                 </property>
+                 <property name="digitCount">
+                  <number>3</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="ledGen2_Ready">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton {
+    background-color:       gray;
+    color:                  		white;
+}
+
+QRadioButton::indicator {
+    width:                  32px;
+    height:                 32px;
+    border-radius:          10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       green;
+    border:                 2px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       black;
+    border:                 2px solid white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string> READY</string>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="ledGen2_Automatic">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton {
+    background-color:       gray;
+    color:                  		white;
+}
+
+QRadioButton::indicator {
+    width:                  32px;
+    height:                 32px;
+    border-radius:          10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       green;
+    border:                 2px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       black;
+    border:                 2px solid white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>AUTO POWER</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="ledGen2_Alarm">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton {
+    background-color:       gray;
+    color:                  		white;
+}
+
+QRadioButton::indicator {
+    width:                  32px;
+    height:                 32px;
+    border-radius:          10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       red;
+    border:                 2px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       black;
+    border:                 2px solid white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>ALARM</string>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupStrip2">
+              <property name="maximumSize">
+               <size>
+                <width>256</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-color: #FF17365D;
+    margin-top: 27px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 5px 50px;
+    background-color: #FF17365D;
+    color: rgb(255, 255, 255);
+}</string>
+              </property>
+              <property name="title">
+               <string>Internal Belt</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="3" column="0" colspan="2">
+                <widget class="QRadioButton" name="ledStrip2_Alarm">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton {
+    background-color:       gray;
+    color:                  		white;
+}
+
+QRadioButton::indicator {
+    width:                  32px;
+    height:                 32px;
+    border-radius:          10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       red;
+    border:                 2px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       black;
+    border:                 2px solid white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>ALARM</string>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0" colspan="2">
+                <widget class="QLabel" name="label_7">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>50</weight>
+                   <italic>true</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(170, 255, 127);
+color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Actual Torque [%]:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="2">
+                <widget class="QRadioButton" name="ledStrip2_Ready">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton {
+    background-color:       gray;
+    color:                  		white;
+}
+
+QRadioButton::indicator {
+    width:                  32px;
+    height:                 32px;
+    border-radius:          10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       green;
+    border:                 2px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       black;
+    border:                 2px solid white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string> READY</string>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLabel" name="lblError_IntRoll">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgba(255, 255, 255, 0%);
+color: white;</string>
+                 </property>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="label_21">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgba(255, 255, 255, 0%);
+color: white;</string>
+                 </property>
+                 <property name="text">
+                  <string>Error N:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="QLCDNumber" name="lcdTorque2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>64</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(170, 255, 127);
+border: 2px solid rgb(170, 255, 127);
+border-radius: 10px;
+padding: 0 8px;
+
+
+</string>
+                 </property>
+                 <property name="smallDecimalPoint">
+                  <bool>true</bool>
+                 </property>
+                 <property name="digitCount">
+                  <number>3</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="pageSet_Gen1">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 0, 0, 0%);</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QGroupBox" name="groupSetupGen1">
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <italic>true</italic>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0%);</string>
+              </property>
+              <property name="title">
+               <string>External Welding G1:</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                 <item>
+                  <widget class="QToolButton" name="tbtEnableGen1">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>190</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>190</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: white;
+background-color: rgba(184, 184, 184, 0%);</string>
+                   </property>
+                   <property name="text">
+                    <string>ENABLE</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="icones.qrc">
+                     <normaloff>:/new/prefix1/Icones/switchOFF_Trans.png</normaloff>
+                     <normalon>:/new/prefix1/Icones/switchON_Trans.png</normalon>:/new/prefix1/Icones/switchOFF_Trans.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>80</width>
+                     <height>36</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextBesideIcon</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="tbtEnablePower1">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>190</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>190</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: white;
+background-color: rgba(184, 184, 184, 0%);</string>
+                   </property>
+                   <property name="text">
+                    <string>AUTO Power</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="icones.qrc">
+                     <normaloff>:/new/prefix1/Icones/switchOFF_Trans.png</normaloff>
+                     <normalon>:/new/prefix1/Icones/switchON_Trans.png</normalon>:/new/prefix1/Icones/switchOFF_Trans.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>80</width>
+                     <height>36</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextBesideIcon</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="tbtEnableMotor1">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>190</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>190</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: white;
+background-color: rgba(184, 184, 184, 0%);</string>
+                   </property>
+                   <property name="text">
+                    <string>ServoMotor</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="icones.qrc">
+                     <normaloff>:/new/prefix1/Icones/switchOFF_Trans.png</normaloff>
+                     <normalon>:/new/prefix1/Icones/switchON_Trans.png</normalon>:/new/prefix1/Icones/switchOFF_Trans.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>80</width>
+                     <height>36</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextBesideIcon</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>50</weight>
+                     <italic>true</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>EXTERNAL STRIP SPEED 1 [%]: </string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_5">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout">
+                     <item>
+                      <widget class="QFrame" name="frame_2">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 127);</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_14">
+                        <property name="topMargin">
+                         <number>3</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>3</number>
+                        </property>
+                        <item>
+                         <widget class="QLabel" name="label_15">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>Lenght: </string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLCDNumber" name="lcdLenghtCor1">
+                          <property name="styleSheet">
+                           <string notr="true">color: black;
+background-color: white;</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_16">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>[mm]</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_11">
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>Power Correction:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLCDNumber" name="lcdPowerCor1">
+                          <property name="styleSheet">
+                           <string notr="true">color: black;
+background-color: white;</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_25">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>[%]</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QToolButton" name="nES">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 170, 127);</string>
+                       </property>
+                       <property name="text">
+                        <string>...</string>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>32</width>
+                         <height>48</height>
+                        </size>
+                       </property>
+                       <property name="arrowType">
+                        <enum>Qt::LeftArrow</enum>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLCDNumber" name="lcdExtRollDiameter">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>256</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: black;
+background-color: white;</string>
+                       </property>
+                       <property name="smallDecimalPoint">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QToolButton" name="pES">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(170, 255, 127);</string>
+                       </property>
+                       <property name="text">
+                        <string>...</string>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>32</width>
+                         <height>48</height>
+                        </size>
+                       </property>
+                       <property name="arrowType">
+                        <enum>Qt::RightArrow</enum>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QLCDNumber" name="lcdMaxGen1">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: black;
+background-color: white;</string>
+                   </property>
+                   <property name="smallDecimalPoint">
+                    <bool>true</bool>
+                   </property>
+                   <property name="digitCount">
+                    <number>4</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_13">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>16</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>max</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="slideMaxGen1">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>56</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QSlider{
+	min-height: 56px;
+	background-color:rgba(255,255,255,0%);
+
+}
+QSlider::groove:horizontal{
+	border: 2px solid blue;
+	height: 10px;
+	background: lightblue;
+	margin: 0 0px;
+}
+QSlider::handle:horizontal{
+	background: #22B14C;
+	border: 5px solid #B5E61D;
+	width: 32px;
+	margin: -32px -1px;
+	border-radius:10px;
+}</string>
+                   </property>
+                   <property name="minimum">
+                    <number>20</number>
+                   </property>
+                   <property name="maximum">
+                    <number>120</number>
+                   </property>
+                   <property name="value">
+                    <number>50</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <widget class="QLCDNumber" name="lcdMinGen1">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: black;
+background-color: white;</string>
+                   </property>
+                   <property name="smallDecimalPoint">
+                    <bool>true</bool>
+                   </property>
+                   <property name="digitCount">
+                    <number>4</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_14">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>16</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>min</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="slideMinGen1">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>56</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QSlider{
+	min-height: 56px;
+	background-color:rgba(255,255,255,0%);
+
+}
+QSlider::groove:horizontal{
+	border: 2px solid blue;
+	height: 10px;
+	background: lightblue;
+	margin: 0 0px;
+}
+QSlider::handle:horizontal{
+	background: #22B14C;
+	border: 5px solid #B5E61D;
+	width: 32px;
+	margin: -32px -1px;
+	border-radius:10px;
+}</string>
+                   </property>
+                   <property name="minimum">
+                    <number>20</number>
+                   </property>
+                   <property name="maximum">
+                    <number>120</number>
+                   </property>
+                   <property name="value">
+                    <number>30</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="setupPage">
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupSetupAxes">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0%);</string>
+          </property>
+          <property name="title">
+           <string>Metal Strips &amp; Encoder</string>
+          </property>
+          <widget class="QComboBox" name="comboBox_Gen2">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>392</y>
+             <width>232</width>
+             <height>45</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>32</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 170, 255);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Version V1.0</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Version V2.0</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Version V3.0</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>288</y>
+             <width>196</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+             <italic>true</italic>
+            </font>
+           </property>
+           <property name="text">
+            <string>External Generator Version:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_17">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>366</y>
+             <width>194</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+             <italic>true</italic>
+            </font>
+           </property>
+           <property name="text">
+            <string>Internal Generator Version:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblEncoderDiameter">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>31</y>
+             <width>180</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+             <italic>true</italic>
+            </font>
+           </property>
+           <property name="text">
+            <string>Encoder - Roll Diameter: </string>
+           </property>
+          </widget>
+          <widget class="QLCDNumber" name="lcdEncoderDiameter">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>57</y>
+             <width>216</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: black;
+background-color: white;</string>
+           </property>
+           <property name="smallDecimalPoint">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_Gen1">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>314</y>
+             <width>232</width>
+             <height>45</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>32</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 170, 255);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Version V1.0</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Version V2.0</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Version V3.0</string>
+            </property>
+           </item>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page">
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupReceiptList">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="title">
+           <string>TEMPLATES :</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_25">
+           <item row="4" column="0" colspan="3">
+            <widget class="QFrame" name="frame_NewReceipt">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_26">
+              <property name="topMargin">
+               <number>7</number>
+              </property>
+              <property name="bottomMargin">
+               <number>3</number>
+              </property>
+              <property name="verticalSpacing">
+               <number>3</number>
+              </property>
+              <item row="1" column="0" colspan="2">
+               <widget class="QTableWidget" name="tableWidget">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="editTriggers">
+                 <set>QAbstractItemView::SelectedClicked</set>
+                </property>
+                <property name="tabKeyNavigation">
+                 <bool>false</bool>
+                </property>
+                <property name="showDropIndicator" stdset="0">
+                 <bool>false</bool>
+                </property>
+                <property name="dragDropOverwriteMode">
+                 <bool>false</bool>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::SingleSelection</enum>
+                </property>
+                <property name="selectionBehavior">
+                 <enum>QAbstractItemView::SelectRows</enum>
+                </property>
+                <property name="sortingEnabled">
+                 <bool>false</bool>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>1</number>
+                </property>
+                <attribute name="horizontalHeaderVisible">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="verticalHeaderVisible">
+                 <bool>false</bool>
+                </attribute>
+                <column/>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="btnNEW_RECEIPT">
+             <property name="font">
+              <font>
+               <family>Arial Black</family>
+               <pointsize>12</pointsize>
+               <weight>10</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 170, 255);
+</string>
+             </property>
+             <property name="text">
+              <string>ADD</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>:/new/prefix1/Icons/Plus_trans256.png</normaloff>:/new/prefix1/Icons/Plus_trans256.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_64">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 255);
+background-color: rgb(255, 255, 255);
+font: 87 12pt &quot;Arial Black&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Selected template:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1" colspan="2">
+            <widget class="QLabel" name="lblSELECTED">
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 255);
+background-color: rgb(255, 255, 255);
+font: 87 12pt &quot;Arial Black&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="btnLOAD_RECEIPT">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(85, 255, 0);</string>
+             </property>
+             <property name="text">
+              <string>LOAD</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>:/new/prefix1/Icons/Reload_trans256.png</normaloff>:/new/prefix1/Icons/Reload_trans256.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="btnDEL_RECEIPT">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string>DELETE</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>:/new/prefix1/Icons/Close_trans256.png</normaloff>:/new/prefix1/Icons/Close_trans256.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="3">
+     <widget class="QFrame" name="statusFrame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>52</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="lblStatus">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>28</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 255);
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>-</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblInfo">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 255);
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>-</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="3">
+     <widget class="QFrame" name="frameButtons">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_DATE">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(0, 0, 0, 0%);
+Font: 14px</string>
+         </property>
+         <property name="text">
+          <string>yyyy.MM.dd</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_TIME">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(0, 0, 0, 0%);
+Font: 14px</string>
+         </property>
+         <property name="text">
+          <string>hh:mm:ss</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelTemperature">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(0, 0, 0, 0%);
+Font: 14px</string>
+         </property>
+         <property name="text">
+          <string>T = 25 °C</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tbtLock">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>LOCKED</string>
+         </property>
+         <property name="icon">
+          <iconset resource="icones.qrc">
+           <normaloff>:/new/prefix1/Icones/LockOffTrans.png</normaloff>:/new/prefix1/Icones/LockOffTrans.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tbtReset">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+</string>
+         </property>
+         <property name="text">
+          <string>RESET</string>
+         </property>
+         <property name="icon">
+          <iconset resource="icones.qrc">
+           <normaloff>:/new/prefix1/Icones/ResetTrans.png</normaloff>:/new/prefix1/Icones/ResetTrans.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tbtTemplates">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+</string>
+         </property>
+         <property name="text">
+          <string>Templates</string>
+         </property>
+         <property name="icon">
+          <iconset resource="icones.qrc">
+           <normaloff>:/new/prefix1/Icones/Counter_trans.png</normaloff>:/new/prefix1/Icones/Counter_trans.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tbtSettingsExt">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+</string>
+         </property>
+         <property name="text">
+          <string>External</string>
+         </property>
+         <property name="icon">
+          <iconset resource="icones.qrc">
+           <normaloff>:/new/prefix1/Icones/ID_shortcut_trans.png</normaloff>:/new/prefix1/Icones/ID_shortcut_trans.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tbtSettingsInt">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+</string>
+         </property>
+         <property name="text">
+          <string>Internal</string>
+         </property>
+         <property name="icon">
+          <iconset resource="icones.qrc">
+           <normaloff>:/new/prefix1/Icones/ID_shortcut_trans.png</normaloff>:/new/prefix1/Icones/ID_shortcut_trans.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0, 0, 0, 0%);
+background-color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <property name="leftMargin">
+        <number>1</number>
+       </property>
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 127);</string>
+         </property>
+         <property name="text">
+          <string>LAMINATE:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="ledEncoder_Ready">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+
+   color: 						rgb(255, 255, 127);
+}
+
+QRadioButton::indicator {
+    width:                  		28px;
+    height:                 		28px;
+    border-radius:         	10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       green;
+    border:                 2px solid rgb(255, 255, 127);;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       black;
+    border:                 2px solid rgb(255, 255, 127);;
+}</string>
+         </property>
+         <property name="text">
+          <string> READY</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+
+    color:                  		rgb(255, 255, 127);
+}
+
+QRadioButton::indicator {
+    width:                  		28px;
+    height:                 		28px;
+    border-radius:           10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       green;
+    border:                 		 2px solid rgb(255, 255, 127);
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       black;
+    border:                 		 2px solid rgb(255, 255, 127);
+}</string>
+         </property>
+         <property name="text">
+          <string>ALARM</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLCDNumber" name="lcdLaminateSpeed">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:rgb(255, 255, 127);
+border: 2px solid  rgb(255, 255, 127);;
+border-radius: 10px;
+padding: 0 8px;
+
+
+</string>
+         </property>
+         <property name="smallDecimalPoint">
+          <bool>true</bool>
+         </property>
+         <property name="value" stdset="0">
+          <double>0.000000000000000</double>
+         </property>
+         <property name="intValue" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 127);</string>
+         </property>
+         <property name="text">
+          <string> [mm/s]</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="lblTemplateName">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;
+background-color: white;</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icones.qrc"/>
+ </resources>
+ <connections/>
+</ui>

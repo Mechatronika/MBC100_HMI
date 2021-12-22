@@ -1,0 +1,14 @@
+0=  
+1=ETHERCAT communication with A01 - External Belt Servo Motor!
+2=ETHERCAT communication with A02 - Internal Belt Servo Motor!
+3=ETHERCAT communication with XA01-1 - Encoder Terminal!
+4=Servo Drive Error - A01 External Belt Servo Motor!
+5=Servo Drive Error - A02 Internal Belt Servo Motor!
+6=Master Encoder Error - XA01-1 Encoder Terminal!
+7=Error Welding Generator - Ext. Strip
+8=Error Welding Generator - Int. Strip
+9=Error Initialisation - Press RESET (touch screen)
+
+
+
+

@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Icones/Counter_trans.png</file>
+        <file>Icones/Gen1Trans.png</file>
+        <file>Icones/Gen2Trans.png</file>
+        <file>Icones/GenGrap_Trans.png</file>
+        <file>Icones/Help_trans.png</file>
+        <file>Icones/ID_shortcut_trans.png</file>
+        <file>Icones/YaskawaTrans.png</file>
+        <file>Icones/LockOffTrans.png</file>
+        <file>Icones/LockOnTrans.png</file>
+        <file>Icones/ResetTrans.png</file>
+        <file>Icones/LedGreenTrans.png</file>
+        <file>Icones/LedRedTrans.png</file>
+        <file>Icones/switchOFF_Trans.png</file>
+        <file>Icones/switchON_Trans.png</file>
+        <file>Icones/HomeTrans.png</file>
+        <file>Icones/Logo_Trans.png</file>
+        <file>Icones/Exit_256.png</file>
+        <file>Icones/Lock_128.png</file>
+        <file>Icones/Setup3_256_128.png</file>
+        <file>Icones/Unlock_128.png</file>
+        <file>Icones/Close_256.png</file>
+    </qresource>
+</RCC>
