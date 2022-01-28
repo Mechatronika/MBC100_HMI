@@ -73,7 +73,7 @@ public:
     {
         LoadingForm->setWindowTitle(QApplication::translate("LoadingForm", "Form", nullptr));
         label->setText(QString());
-        label_2->setText(QApplication::translate("LoadingForm", "Designed by: Krasimir Krastev ", nullptr));
+        label_2->setText(QApplication::translate("LoadingForm", "Designed by: Krasimir Krastev - this is an open source software under GPL 3.0 license", nullptr));
         label_3->setText(QApplication::translate("LoadingForm", "e-mail: krasimir.krustev@yahoo.com", nullptr));
     } // retranslateUi
 

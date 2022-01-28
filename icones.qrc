@@ -15,11 +15,11 @@
         <file>Icones/switchOFF_Trans.png</file>
         <file>Icones/switchON_Trans.png</file>
         <file>Icones/HomeTrans.png</file>
-        <file>Icones/Logo_Trans.png</file>
         <file>Icones/Exit_256.png</file>
         <file>Icones/Lock_128.png</file>
         <file>Icones/Setup3_256_128.png</file>
         <file>Icones/Unlock_128.png</file>
         <file>Icones/Close_256.png</file>
+        <file>Icones/Logo_Trans.png</file>
     </qresource>
 </RCC>
