@@ -35,5 +35,6 @@ The application suggest main s`creen which is responsible for displaying actual 
                 quint32 dwTemplateLoad = 0;                            // Number of template number which is loaded
                 double  lrParameters[16];                              // 8 Id for parameters in each group
         };
+        
 
 
