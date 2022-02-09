@@ -1,7 +1,7 @@
 # MBC100_HMI
 Front-end application used for touch screen HMI in laminated tube making mashines.
 
-This sapplication is intended to use as an HMI for laminated tube making mashines with Beckhoff PLC. Is use an ADS connection to the PLC for data reading and writing - it is running in separate thread. 
+This application is intended to use as an HMI for laminated tube making mashines with Beckhoff PLC. It uses an ADS connection to the PLC for data reading and writing - it is running in separate thread. 
 The application suggest main s`creen which is responsible for displaying actual information about actual welding power, laminate speed and actual data from metal belts servo motors. Next screens contains the settings for each of the welding belts.
 Main screen:
 ![MainScreen](https://user-images.githubusercontent.com/7886408/153146443-37d20289-dcb4-4713-9a13-977ff910c0a8.PNG)
