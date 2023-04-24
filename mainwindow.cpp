@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+// Main Window of MBC100_HMI - HMI for longitudinal welding machine for laminated tubes
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -314,7 +315,7 @@ void MainWindow::tmrTimeout()
                    {
                     //wStatus->SystemMessage(0,0,6);
                     iInitStep++;
-                    tmr->start(1000);                    
+                    tmr->start(1500);                    
                    }
                    else
                    {                       
@@ -328,12 +329,12 @@ void MainWindow::tmrTimeout()
                            //iNoTriesTwinCat++;
                            //wStatus->SystemMessage(0,0,6);
                            iInitStep++;//iInitStep = 0;
-                           tmr->start(1000);
+                           tmr->start(1500);
                        }
                        else
                        {                           
                            iNoTriesTwinCat++;
-                           tmr->start(1000);
+                           tmr->start(1500);
                        }
                    }
               break;
@@ -374,7 +375,7 @@ void MainWindow::tmrTimeout()
                  connect(ui->slideMinGen2, SIGNAL(valueChanged(int)), this, SLOT(settings_minGen2_Changed(int)));
                  connect(ui->slideMaxGen2, SIGNAL(valueChanged(int)), this, SLOT(settings_maxGen2_Changed(int)));
                  iInitStep ++;
-                 tmr->start(2000);
+                 tmr->start(1500);
                  break;
 
         case 9: // OPEN RECEIPT DATA BASE ------------------------------------------------------------- load RECEIPT
