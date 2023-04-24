@@ -51,6 +51,7 @@ void Dialog::on_B_tire_pressed()
 
 void Dialog::on_B_dot_pressed()
 {
+    if(iValMode == 2) return; // Dot is not allowed for integer numbers
     if(myString.isEmpty())myString.append("0"); //If string is empty - put a zero before decimal point
     myString.append(".");                       //Put decimal point
     ui.lineEdit->setText(myString);
