@@ -251,7 +251,7 @@ void MainWindow::tmrTimeout()
 
          case 1: //READ SETTINGS --------------------------------------------------------------
                  tmr->stop();
-                         loadingForm->putProgress(10);
+                         loadingForm->putProgress(20);
                          iInitStep++;
                          tmr->start(200);
 
@@ -259,7 +259,7 @@ void MainWindow::tmrTimeout()
 
          case 2: //READ STATUS AND MESSAGES ----------------------------------------------------------
                 tmr->stop();
-                        loadingForm->putProgress(20);                                                
+                        loadingForm->putProgress(40);                                                
                         //parameterText = new iddescriptions;
                         actStatus = new Status;
                         ui->lblStatus->setText(actStatus->arrStatus[0]);
@@ -270,7 +270,7 @@ void MainWindow::tmrTimeout()
 
         case 3: // CHECK LOG FILES & DIRECTORY-------------------------------------------------------- Translate HMI
                 tmr->stop();
-                    loadingForm->putProgress(30);
+                    loadingForm->putProgress(60);
                     strPath = "\\LogFiles";
                     if(!QDir().exists(strPath)) QDir().mkpath(strPath);
                     {
@@ -292,7 +292,7 @@ void MainWindow::tmrTimeout()
 
          case 4: //READ TEMPLATE LIST ----------------------------------------------------------
                 tmr->stop();
-                   loadingForm->putProgress(40);
+                   loadingForm->putProgress(80);
                    if(!QDir().exists("\\Templates")) QDir().mkpath("\\Templates");
                    BrowseFiles();
                    iInitStep++;
@@ -302,14 +302,14 @@ void MainWindow::tmrTimeout()
 
          case 5: // WAIT A MINUTE----------------------------------------------------- WAIT A MINUTE
                  tmr->stop();
-                 loadingForm->putProgress(50);
+                 loadingForm->putProgress(900);
                  iInitStep ++;
                  tmr->start(5500);
                  break;
 
         case 6: //Try TwinCat connection -------------------------------------------------------------
                tmr->stop();
-                    loadingForm->putProgress(60);
+                    loadingForm->putProgress(100);
                    if(wAdsWorker->TryConnectADS())   //ADS 09.2018
                    {
                     //wStatus->SystemMessage(0,0,6);
@@ -340,7 +340,7 @@ void MainWindow::tmrTimeout()
 
     case 7: // MAKE DIAGNOSTICS SCREEN------------------------------------------------------------- DIAGNOSTICS SCREEN
             tmr->stop();             
-            loadingForm->putProgress(70);
+            loadingForm->putProgress(100);
             iInitStep++;
             tmr->start(100);
             break;
@@ -348,7 +348,7 @@ void MainWindow::tmrTimeout()
 
     case 8: // OPEN RECEIPT DATA BASE -------------------------------------------------------------open DB
                  tmr->stop();
-                 loadingForm->putProgress(80);
+                 loadingForm->putProgress(100);
                  //Install Event Filters
                  //=================
                  ui->lcdEncoderDiameter->installEventFilter(this);
@@ -379,7 +379,7 @@ void MainWindow::tmrTimeout()
 
         case 9: // OPEN RECEIPT DATA BASE ------------------------------------------------------------- load RECEIPT
                 tmr->stop();
-                loadingForm->putProgress(90);
+                loadingForm->putProgress(100);
                 strFirstTime = "\\Templates\\";
                 strFirstTime.append(strLastTemplate);
                 if(FileLoad(strFirstTime))ui->lblTemplateName->setText(strLastTemplate);
