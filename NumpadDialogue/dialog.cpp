@@ -41,8 +41,6 @@ void Dialog::on_CLEAR_pressed()
     ui.lineEdit->setText(myString);
 }
 
-
-
 void Dialog::on_B_tire_pressed()
 {
    if(myString.contains("-"))
@@ -92,8 +90,6 @@ void Dialog::on_pushButton_pressed()
 {
     this->close();                              //Close NUMPAD
 }
-
-
 
 void Dialog::on_B_1_pressed()
 {
