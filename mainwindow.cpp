@@ -115,10 +115,10 @@ MainWindow::MainWindow(QWidget *parent) :
        }
 
        //INIT  TIMER-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                   tmr = new QTimer();
-                   connect(tmr, SIGNAL(timeout()), this, SLOT(tmrTimeout()));
-                   tmr->start(1000);
-                   iInitStep = 1;
+	tmr = new QTimer();
+ 	connect(tmr, SIGNAL(timeout()), this, SLOT(tmrTimeout()));
+        tmr->start(1000);
+        iInitStep = 1;
 }
 
 MainWindow::~MainWindow()
@@ -304,7 +304,7 @@ void MainWindow::tmrTimeout()
                  tmr->stop();
                  loadingForm->putProgress(50);
                  iInitStep ++;
-                 tmr->start(5500);
+                 tmr->start(1000);
                  break;
 
         case 6: //Try TwinCat connection -------------------------------------------------------------
@@ -328,7 +328,7 @@ void MainWindow::tmrTimeout()
                            //iNoTriesTwinCat++;
                            //wStatus->SystemMessage(0,0,6);
                            iInitStep++;//iInitStep = 0;
-                           tmr->start(3000);
+                           tmr->start(1000);
                        }
                        else
                        {                           
