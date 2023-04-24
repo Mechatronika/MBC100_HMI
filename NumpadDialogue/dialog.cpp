@@ -45,7 +45,13 @@ void Dialog::on_CLEAR_pressed()
 
 void Dialog::on_B_tire_pressed()
 {
-    myString.append("-");
+   if(myString.contains("-"))
+    {
+        myString.remove("-");
+    }
+    else{
+        myString.push_front("-");
+    }    
     ui.lineEdit->setText(myString);
 }
 
